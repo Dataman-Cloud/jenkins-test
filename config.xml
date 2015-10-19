@@ -85,6 +85,61 @@
           <mode>NORMAL</mode>
           <labelString>mesos-s</labelString>
         </org.jenkinsci.plugins.mesos.MesosSlaveInfo>
+        <org.jenkinsci.plugins.mesos.MesosSlaveInfo>
+          <slaveCpus>0.1</slaveCpus>
+          <slaveMem>512</slaveMem>
+          <executorCpus>0.1</executorCpus>
+          <maxExecutors>2</maxExecutors>
+          <executorMem>128</executorMem>
+          <remoteFSRoot>jenkins</remoteFSRoot>
+          <idleTerminationMinutes>3</idleTerminationMinutes>
+          <jvmArgs>-Xms16m -XX:+UseConcMarkSweepGC -Djava.net.preferIPv4Stack=true</jvmArgs>
+          <jnlpArgs></jnlpArgs>
+          <containerInfo>
+            <type>DOCKER</type>
+            <dockerImage>10.3.10.33:5000/centos7/jdk8-jenkins-slave-base</dockerImage>
+            <volumes>
+              <org.jenkinsci.plugins.mesos.MesosSlaveInfo_-Volume>
+                <containerPath>/mnt/mesos/sandbox/slave.jar</containerPath>
+                <hostPath>/data/mesos/jenkins/slave.jar</hostPath>
+                <readOnly>false</readOnly>
+              </org.jenkinsci.plugins.mesos.MesosSlaveInfo_-Volume>
+              <org.jenkinsci.plugins.mesos.MesosSlaveInfo_-Volume>
+                <containerPath>/var/lib/docker</containerPath>
+                <hostPath>/var/lib/docker</hostPath>
+                <readOnly>false</readOnly>
+              </org.jenkinsci.plugins.mesos.MesosSlaveInfo_-Volume>
+              <org.jenkinsci.plugins.mesos.MesosSlaveInfo_-Volume>
+                <containerPath>/var/run/docker.sock</containerPath>
+                <hostPath>/var/run/docker.sock</hostPath>
+                <readOnly>false</readOnly>
+              </org.jenkinsci.plugins.mesos.MesosSlaveInfo_-Volume>
+              <org.jenkinsci.plugins.mesos.MesosSlaveInfo_-Volume>
+                <containerPath>/usr/bin/docker</containerPath>
+                <hostPath>/usr/bin/docker</hostPath>
+                <readOnly>false</readOnly>
+              </org.jenkinsci.plugins.mesos.MesosSlaveInfo_-Volume>
+              <org.jenkinsci.plugins.mesos.MesosSlaveInfo_-Volume>
+                <containerPath>/sys/fs/cgroup</containerPath>
+                <hostPath>/sys/fs/cgroup</hostPath>
+                <readOnly>false</readOnly>
+              </org.jenkinsci.plugins.mesos.MesosSlaveInfo_-Volume>
+            </volumes>
+            <networking>BRIDGE</networking>
+            <portMappings>
+              <org.jenkinsci.plugins.mesos.MesosSlaveInfo_-PortMapping>
+                <containerPort>80</containerPort>
+                <protocol>tcp</protocol>
+              </org.jenkinsci.plugins.mesos.MesosSlaveInfo_-PortMapping>
+            </portMappings>
+            <useCustomDockerCommandShell>false</useCustomDockerCommandShell>
+            <customDockerCommandShell></customDockerCommandShell>
+            <dockerPrivilegedMode>true</dockerPrivilegedMode>
+            <dockerForcePullImage>true</dockerForcePullImage>
+          </containerInfo>
+          <mode>NORMAL</mode>
+          <labelString>mesos-m</labelString>
+        </org.jenkinsci.plugins.mesos.MesosSlaveInfo>
       </slaveInfos>
     </org.jenkinsci.plugins.mesos.MesosCloud>
   </clouds>
