@@ -1,11 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.tasks.Mailer_-DescriptorImpl plugin="mailer@1.11">
   <smtpAuthUsername>jenkins@dataman-inc.com</smtpAuthUsername>
-<<<<<<< HEAD
   <smtpAuthPassword>SStnzmd3AAOqhOI2sOoBBnrVOJAiISFFyxQULsEJba+xM3+V2OYlq8NbGRTUz2XwpuplQue00tiG4SfpD/9ZB9alZLxx1DThhmDSyHrGNRdNNDuDMpYuiUfI92FHJSRAA7U99oHy0WkMXEB/INyntvXL/bxvzjSdhl2PWPB4MVca6Yb8GL4deMMFu2UBZ9ATv10B7ay5iqWx5Mj4JalKYojhTF6dPHIzthTyPSc432PT3RapdcjIfexkMY1VP19Iys9LSP46Q/iCmKWm+AwCvorKWIm9r4Ae6cUvk+iPcVDnbbH/5BbpPThkNY91Og0+qUtLdhg81jOghUypczLksQ==</smtpAuthPassword>
-=======
-  <smtpAuthPassword>ymJ+rKPjh3rO3a+dVLxujiKB+vINgHuh2d9VQEZDayIcc/ggmIzUph0BLVnjXE3qnFNV8kkDfB+pXj5sf2fych+U+gqOLlPjNLXIDgrrGBi5I+o5gv78NzJZjTc1yLqyHNtkE4nulfa2/cyIfYKbhMibJnzdGoVl46Z/1SYGPHGO2c8xWJKsxhh9ayjFajAib5dYTXRXQvzVd8ZBV0frRJ7XcPACyMgPPpzB5yprmQtwbzE2yRZlpUg5wyM1AckNFK8QUDKVl96yeZvdtSfHVWm6N/yIPDGzCZFMod+IR5ZO2LjzvrS2LC7mOj9wR/6NuniTxkBNDlP1jbl7chjyVZnUXB5wPHkl5kYqUuwgPFlGRvIdu/EIyeZ/h0YE0iu16szkCyzMaGryr25SZzDAa9fT+1FyAPB65NRb0IDGaTE1FStEekkr3STuf+9257qJWlXnXtxXbyZQ9RDmXDF22OE9MIpqKwmrxXZdBhi/DjKI3Ybwe3EG/Ilnz60eO3VJRB/L9qfYqgvfIMJhqZ1LRZNqSHHSRaBLmU56r/LipAUoCiMVMx9kfKLqIMW/7ifxp7vhQnHaKeycZ+EAGBbs/B7D+5ziwKc4Fq2dZXtYLvr146UGni2tE3CXqod/guxExQAcuXsEPvnCled8OVtZTSG4lKYevYfh1+i3C32pTiU=</smtpAuthPassword>
->>>>>>> 4f071e5cb286eee73824f8f3a2bcdf06a1dc5743
   <smtpHost>smtp.exmail.qq.com</smtpHost>
   <useSsl>true</useSsl>
   <charset>UTF-8</charset>
