@@ -31,11 +31,11 @@
       <jenkinsURL>http://10.3.10.33:8001/</jenkinsURL>
       <slaveInfos>
         <org.jenkinsci.plugins.mesos.MesosSlaveInfo>
-          <slaveCpus>0.1</slaveCpus>
-          <slaveMem>512</slaveMem>
-          <executorCpus>0.1</executorCpus>
+          <slaveCpus>1.0</slaveCpus>
+          <slaveMem>1024</slaveMem>
+          <executorCpus>1.0</executorCpus>
           <maxExecutors>1</maxExecutors>
-          <executorMem>512</executorMem>
+          <executorMem>1024</executorMem>
           <remoteFSRoot>jenkins</remoteFSRoot>
           <idleTerminationMinutes>3</idleTerminationMinutes>
           <jvmArgs>-Xms16m -XX:+UseConcMarkSweepGC -Djava.net.preferIPv4Stack=true</jvmArgs>
