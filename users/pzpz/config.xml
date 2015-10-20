@@ -9,7 +9,14 @@
       <apiToken>UQEdLKHbB5xNA2WQKxNWvsDChIYcVZRV8/A8OUNkFJV7MzWoNpMvLxviJuOiV4Ru</apiToken>
     </jenkins.security.ApiTokenProperty>
     <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@1.18">
-      <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
+      <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
+        <entry>
+          <com.cloudbees.plugins.credentials.domains.Domain>
+            <specifications/>
+          </com.cloudbees.plugins.credentials.domains.Domain>
+          <java.util.concurrent.CopyOnWriteArrayList/>
+        </entry>
+      </domainCredentialsMap>
     </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
     <hudson.model.MyViewsProperty>
       <views>
@@ -31,5 +38,8 @@
     <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.11">
       <emailAddress>zpang@dataman-inc.com</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <timestamp>0</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
   </properties>
 </user>
